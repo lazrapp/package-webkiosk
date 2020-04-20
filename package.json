@@ -1,0 +1,16 @@
+{
+  "name": "package-webkiosk",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "setup": "node setup.js",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "node-ipc": "^9.1.1"
+  }
+}
