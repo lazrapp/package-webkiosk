@@ -2,7 +2,7 @@ const ipc = require('./services/ipc');
 const xsession = require('./services/xsession');
 
 let client;
-let clientName = 'lazr-package-webkiosk';
+let clientName = 'webkiosk';
 
 async function processMQTTMessage(data) {
     console.log('Received MQTT message', data);
@@ -10,7 +10,7 @@ async function processMQTTMessage(data) {
     /* expecting data to be something like
     {
         "chromium": {
-            "url": "https://3dot.net",
+            "url": "https://...",
             "window": "800,480"
         }
     }*/
