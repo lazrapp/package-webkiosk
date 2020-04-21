@@ -21,7 +21,7 @@ module.exports = {
         }
     },
     write: (file) => {
-        return fs.writeFileSync('/home/pi/.Xsession', file);
+        return fs.writeFileSync('~/.Xsession', file);
     },
     set: (chromium) => {
         return execOnDisplay(chromium);
