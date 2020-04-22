@@ -1,1 +1,1 @@
-chromium-browser --window-size=<%= env.chromium.window %> --window-position=0,0 --disable-infobars --noerrdialogs --incognito --disable-features=TranslateUI --bwsi --disable-notifications --disable-component-update --kiosk <%= env.chromium.url %>
+chromium-browser --window-size=<%= env.chromium.window %> --window-position=0,0 --disable-infobars --noerrdialogs --incognito --disable-features=TranslateUI --bwsi --disable-notifications --disable-component-update --simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT" --kiosk <%= env.chromium.url %>
