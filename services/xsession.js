@@ -21,7 +21,7 @@ module.exports = {
         }
     },
     write: (file) => {
-        return fs.writeFileSync('~/.Xsession', file);
+        return fs.writeFileSync('/home/lazr-pck-webkiosk/.Xsession', file);
     },
     set: (chromium) => {
         return execOnDisplay(chromium);
