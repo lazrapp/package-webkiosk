@@ -27,7 +27,7 @@ setup() {
     exec_cmd "apt-get update -y"
     exec_cmd "apt-get install -y imagemagick lightdm unclutter chromium-browser"
     exec_cmd "raspi-config nonint do_boot_behaviour B4"
-    exec_cmd `sed /etc/lightdm/lightdm.conf -i -e "s/^#autologin-user=.*/autologin-user=lazr-pck-webkiosk/"`
+    exec_cmd `sed /etc/lightdm/lightdm.conf -i -e "s/^autologin-user=.*/autologin-user=lazr-pck-webkiosk/"`
 }
 
 setup
